@@ -1,0 +1,30 @@
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 600px;
+  margin-bottom: 2000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: #4d0392;
+  border-radius: 50%;
+  box-shadow: 0px 20px 27px -17px #240449;
+  border: 5px solid white;
+  transition: background-color 0.5s;
+}
+.card:hover {
+  background-color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
