@@ -1,8 +1,18 @@
 {
+  "private": true,
   "scripts": {
-    "watch": "sass --watch styles.scss styles.css"
+    "watch": "sass --watch styles.scss styles.css",
+    "build": "webpack watch"
   },
   "dependencies": {
-    "sass": "^1.43.5"
+    "lodash": "^4.17.21",
+    "sass": "^1.43.5",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1"
   }
 }
