@@ -20,30 +20,15 @@ document.addEventListener("mousemove", function (event) {
         card.style.transform = `
         translateX(${cardDepth * percX}px) 
         translateY(${cardDepth * percY}px) 
-        scale(${1 + card.dataset.depth / 16})
+        scale(${1 + card.dataset.depth / 10})
         
         `;
         card.style.boxShadow = `0px 20px 27px ${
-            -17 - card.dataset.depth * 2
+            -12 - card.dataset.depth * 5
         }px rgb(36, 4, 73)`;
         card.style.zIndex = cardDepth;
         card.classList.add("hello");
+        card.style.filter = `hue-rotate(${(x + y) / 60}deg)`;
     }
     _.camelCase("testing");
 });
-
-for (const card of cards) {
-    let cardDepth = card.dataset.depth * perDepth;
-
-    card.style.transform = `
-    translateX(${cardDepth * percX}px) 
-    translateY(${cardDepth * percY}px) 
-    scale(${1 + card.dataset.depth / 16})
-    
-    `;
-    card.style.boxShadow = `0px 20px 27px ${
-        -17 - card.dataset.depth * 2
-    }px rgb(36, 4, 73)`;
-    card.style.zIndex = cardDepth;
-    card.classList.add("hello");
-}
